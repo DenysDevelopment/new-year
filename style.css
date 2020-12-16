@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background: transparent;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  overflow: hidden;
+
+  font-family: "Covered By Your Grace";
+  font-size: 2rem;
+
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #fff;
+}
+.count-down {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 800px;
+
+  padding: 20px 15px;
+
+  text-align: center;
+
+  backdrop-filter: blur(5px);
+}
+
+.count-down__number {
+  font-size: 3em;
+  font-weight: 700;
+}
+.neon::before {
+  content: attr(data-num);
+}
+.count-down__year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-size: 20em;
+  font-weight: 900;
+  color: purple;
+
+  filter: saturate(40) blur(10px);
+
+  transform: translate(-50%, -50%) rotate(-5deg);
+}
+
+@media (max-width: 900px) {
+  .count-down__year {
+    font-size: 15em;
+  }
+}
+
+@media (max-width: 600px) {
+  .count-down__year {
+    font-size: 10em;
+  }
+}
+@media (max-width: 400px) {
+  .count-down__year {
+    font-size: 7em;
+  }
+}
