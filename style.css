@@ -67,5 +67,9 @@ body {
   .count-down__year {
     display: none;
   }
+  
+  .count-down {
+    flex-direction: column;
+  }
 }
 
