@@ -33,6 +33,7 @@ body {
 
   width: 100%;
   max-width: 800px;
+  border: 2px solid #fff;
 
   padding: 20px 15px;
 
@@ -66,6 +67,5 @@ body {
   .count-down__year {
     display: none;
   }
-  
 }
 
