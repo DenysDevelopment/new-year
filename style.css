@@ -68,9 +68,12 @@ body {
   .count-down__year {
     display: none;
   }
+ 
+  .count-down__item {
+    width: 100%;
+  }
   
   .count-down {
-    justify-content: center;
     flex-wrap: wrap;
   }
 }
