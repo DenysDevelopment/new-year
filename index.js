@@ -9,9 +9,10 @@ let currentYear;
 let newYear;
 let leftUntil;
 
-countDownYear.innerHTML = new Date().getFullYear() + 1;
+
 
 function countDown() {
+  countDownYear.innerHTML = new Date().getFullYear() + 1;
   currentYear = new Date();
   newYear = new Date(`Jan 1 ${currentYear.getFullYear() + 1} 00:00:00`);
 
