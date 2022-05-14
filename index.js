@@ -9,8 +9,6 @@ let currentYear;
 let newYear;
 let leftUntil;
 
-
-
 function countDown() {
   countDownYear.innerHTML = new Date().getFullYear() + 1;
   currentYear = new Date();
